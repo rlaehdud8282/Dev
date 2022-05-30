@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>splice() 함수</title>
+    <script>
+        let animal = ['bear', 'chochen', 'dog', 'horse'];
+
+        //특징 인덱스에서 삭제
+        //delete animal['dog'];
+        animal.splice(2, 1);
+
+        for(let item in animal)
+        console.log(animal[item]);
+
+        //특정 인덱스에 추가
+        //animal[1] = "pig";
+        animal.splice(1, 0, "pig");
+
+        console.log(animal);
+
+        let number = [1, 2, 3];
+        let char = ['a', 'b', 'c'];
+
+
+        let list = number.concat(char);
+        console.log(list);
+
+      document.write(number.join('-'));
+      document.write("<br>");
+      document.write(char.join(':'));
+      document.write("<br>");
+      document.write(char.join());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
